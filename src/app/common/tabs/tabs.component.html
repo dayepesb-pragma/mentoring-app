@@ -1,0 +1,19 @@
+<section>
+  <div class="taabs-header-i">
+    <div class="nav-links-i">
+      <div class="nav-links-i-menu">
+        <ng-container *ngFor="let item of tabs">
+          <div class="item-tab">
+            <span (click)="clickTab(item)">{{ item.label }}</span>
+          </div>
+        </ng-container>
+      </div>
+      <div class="nav-helper-right-i">
+        <div _ngcontent-apl-c18="" class="line-i line-right-i"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="content-tab">
+  <ng-content></ng-content>
+</div>
